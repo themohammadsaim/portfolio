@@ -1,648 +1,900 @@
 <!doctype html>
 <html>
+
 <head>
-<title>Portfolio</title>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<link rel=stylesheet href=style.css>
-<script src=myscript.js></script>
+    <title>Portfolio</title>
+    <meta name=viewport content="width=device-width,initial-scale=1">
+    <link rel=stylesheet href=style.css>
+    <script src=myscript.js></script>
 </head>
+
 <body>
-<nav class=timeline-nav>
-<ul>
-<li><a href=#intro>Intro</a></li>
-<li><a href=#techs>Techs</a></li>
-<li><a href=#projects>Projects</a></li>
-<li><a href=#certifications>Certifications</a></li>
-<li><a href=#beyond-tech>Beyond the Tech</a></li>
-<li><a href=#contact>Socials</a></li>
-</ul>
-</nav>
-<div id=intro class=container>
-<div class=container>
-<h1>
-Hey there! <br>I'm Mohammad Saim
-</h1>
-<p>
-Computer Science graduate with one year of front-end development experience in HTML, CSS and Designing tools, with a strong passion for cloud computing, particularly AWS
-</p>
-</div>
-</div>
-<div class=divider-container></div>
-<div class=accordion-container>
-<div class=accordion>
-<button class=accordion-button>
-<span class=accordion-title>Education</span>
-<span class=accordion-icon>+</span>
-</button>
-<div class=accordion-content>
-<p>University of Mumbai - BSc in Computer Science <br>Graduated: 2022 <br>GPA: 9.03
-</p>
-</div>
-</div>
-<div class=accordion>
-<button class=accordion-button>
-<span class=accordion-title>Personal Attributes and Interests</span>
-<span class=accordion-icon>+</span>
-</button>
-<div class=accordion-content>
-<p>
-Beyond my technical abilities, I am actively involved in creative activities such as calligraphy, photography, painting, and sketching. I have also demonstrated leadership and teamwork as the captain of my soccer team and have been recognized as the best ping pong player during my school years. I am always eager to learn and embrace new challenges in the tech domain.
-</p>
-<div class=image-gallery>
-<img src="accordion images\12 O'Clock.jpg">
-<img src="accordion images\MH beach.jpg">
-<img src="accordion images\Arch.jpg">
-<img src="accordion images\MH top view.jpg">
-<img src="accordion images\Building.jpg">
-<img src="accordion images\Restaurant.jpg">
-<img src="accordion images\Rays.jpg">
-<img src="accordion images\Copperplate Script.jpg">
-</div>
-</div>
-</div>
-</div>
-<div id=imageModal class=modal>
-<span class=close>&times;</span>
-<img class=modal-content id=modalImage>
-<a class=prev>&#10094;</a>
-<a class=next>&#10095;</a>
-</div>
-<div class=divider-container></div>
-<div id=techs class=heading-container>
-<div class=heading-container>
-<h3 id=techs-main-heading>Techs</h3>
-<h2>always ready to dive into data viz's and <span>cloud</span> stuff</h2>
-</div>
-<div class=card>
-<div class=grid>
-<img src=icons\amazon-web-services-2.svg alt="Image 2">
-<img src=icons\python-logo-only.svg alt="Image 1">
-<img src=icons\html-1.svg alt="Image 4">
-<img src=icons\css-3.svg alt="Image 5">
-<img src=icons\linux.svg alt="Image 6">
-<img src=icons\docker-4.svg alt="Image 3">
-<img src=icons\mysql-3.svg alt="Image 7">
-<img src=icons\visual-studio-code-1.svg alt="Image 8">
-<img src=icons\github-icon-1.svg alt="Image 9">
-</div>
-</div>
-</div>
-<div class=divider-container></div>
-<div id=projects class=heading-container>
-<div class=heading-container>
-<h3 id=project-main-heading>Projects</h3>
-<div class=timeline>
-<div class=project-box>
-<div class=project>
-<div class=date>Oct<br>2024</div>
-<div class=icon>
-<h4>Deploying WordPress on AWS EC2</h4>
-<img src="icons\view more icon.svg" onclick=toggleCard(this)>
-</div>
-<div id=popup-card class=popup-card>
-<div class=close-btn onclick=toggleCard(this)>×</div>
-<h5>
-Deploying WordPress on AWS EC2
-</h5>
-<p2>Successfully deployed a WordPress website on an Amazon Web Services (AWS) Elastic Compute Cloud (EC2) instance using Ubuntu Server. The implementation includes secure networking configuration, stable database setup, and a scalable application architecture.</p2>
-<div class=arc>
-<img src="Architectures images\WordPress Deployment on EC2.svg">
-</div>
-<p2>
-<br><strong>EC2 Instance Configuration</strong>
-1. Launched a new EC2 instance named "WordPress_Server"
-<br>2. Selected Ubuntu Amazon Machine Image (AMI) from the AMI Dashboard
-<br>3. Generated new Key Pair for secure SSH access
-<br>4. Configured network settings to allow HTTP and HTTPS traffic from the internet
-<br>5. Maintained default settings for other configurations to ensure standard deployment<br>
-</p2>
-<p2>
-<br><strong>Network Configuration</strong>
-1. Allocated and associated an Elastic IP address to the instance
-<br>2. This ensures persistent IP addressing, crucial for:
-<br> - DNS resolution stability
-<br> - Consistent website accessibility
-<br> - Maintaining uninterrupted service during instance reboots<br>
-</p2>
-<p2>
-<br><strong>Initial Access</strong>
-- Established secure SSH connection to the instance using the generated Key Pair<br>
-</p2>
-<p2>
-<br><strong>Web Server Installation</strong>
-- Deployed Apache2 web server
-<br>Configured basic server settings for optimal performance<br>
-</p2>
-<p2>
-<br><strong>Runtime Environment Setup</strong>
-1. Installed PHP runtime environment
-<br>2. Implemented MySQL connector for PHP
-<br>3. Established database connectivity<br>
-</p2>
-<p2>
-<br><strong>Database Configuration</strong>
-1. Installed MySQL server
-<br>2. Created dedicated database user with secure credentials
-<br>3. Configured new database for WordPress
-<br>4. Assigned necessary administrative permissions to the database user<br>
-</p2>
-<p2>
-<br><strong>WordPress Setup</strong>
-1. Configured WordPress installation parameters:
-<br>- Set up administrative username
-<br>- Established secure password
-<br>- Configured administrative email
-<br>2. Successfully completed initial login and verification<br>
-</p2>
-<img src="project screenshots\WP - 1.png" class=popup-img>
-<img src="project screenshots\WP - 2.png" class=popup-img>
-<img src="project screenshots\WP - 3.png" class=popup-img>
-<img src="project screenshots\WP - 4.png" class=popup-img>
-<img src="project screenshots\WP - 5.png" class=popup-img>
-<img src="project screenshots\WP - 6.png" class=popup-img>
-<img src="project screenshots\WP - 7.png" class=popup-img>
-<img src="project screenshots\WP - 8.png" class=popup-img>
-<img src="project screenshots\WP - 9.png" class=popup-img>
-<img src="project screenshots\WP - 10.png" class=popup-img>
-<img src="project screenshots\WP - 11.png" class=popup-img>
-<img src="project screenshots\WP - 12.png" class=popup-img>
-<img src="project screenshots\WP - 13.png" class=popup-img>
-<img src="project screenshots\WP - 14.png" class=popup-img>
-<p2>
-<br><strong>Conclusion</strong>
-The WordPress website has been successfully deployed on the AWS EC2 instance. The implementation ensures:
-<br>- Secure access through proper networking configuration
-<br>- Stable hosting environment with persistent IP addressing
-<br>- Robust database backend with secure user permissions
-<br>- Fully functional WordPress content management system<br>
-</p2>
-</div>
-<div class=overlay onclick=toggleCard(this)></div>
-<p1>Secure and scalable WordPress hosting solution on Amazon Web Services
-</p1>
-<p>
-Successfully deployed a WordPress website on an Amazon Web Services (AWS) Elastic Compute Cloud (EC2) instance using Ubuntu Server. The implementation includes secure networking configuration, stable database setup, and a scalable application architecture.
-</p>
-</div>
-<div id=imageModal class=modal>
-<span class=close>&times;</span>
-<img class=modal-content id=modalImage>
-<div class=caption></div>
-<a class=prev>&#10094;</a>
-<a class=next>&#10095;</a>
-</div>
-<div class=project>
-<div class=date>Sept<br>2024</div>
-<div class=icon>
-<h4>Cloud Infrastructure And Deployment</h4>
-<img src="icons\view more icon.svg" onclick=toggleCard(this)>
-</div>
-<div id=popup-card class=popup-card>
-<div class=close-btn onclick=toggleCard(this)>×</div>
-<h5>
-Deployed a Container on Amazon ECS
-</h5>
-<p2>Deployed a containerized application utilizing Amazon Elastic Container Service (ECS). Successfully configured and managed the container's environment within an ECS cluster. Acquired practical experience in cloud-based container deployment.</p2>
-<div class=arc>
-<img src="Architectures images\Docker ECS Container Architecture.svg">
-</div>
-<p2>
-<br><strong>Cluster Creation</strong>
-I began by setting up an ECS cluster on the AWS Management Console. This served as the foundational structure for managing my containerized application.<br>
-</p2>
-<p2>
-<br><strong>Task Definition Creation</strong>
-Next, I defined the specific configuration for my container in a task definition. This included specifying the container image location (Docker repository), allocating the necessary memory and CPU resources, and defining port mappings.<br>
-</p2>
-<p2>
-<br><strong>Service Creation</strong>
-With the task definition ready, I created an ECS service. This service determined the desired number of instances of my container to run and managed their lifecycle.<br>
-</p2>
-<p2>
-<br><strong>Network Configuration</strong>
-To ensure my application was accessible, I configured the network settings for the service. I carefully selected the appropriate network mode, such as AWS Fargate or EC2, based on my project requirements.<br>
-</p2>
-<p2>
-<br><strong>Deployment and Verification</strong>
-Once the service was created, ECS handled the deployment of the container instances. I closely monitored the deployment process to ensure everything went smoothly. After successful deployment, I accessed my application using the provided endpoint to verify its functionality.<br>
-</p2>
-<img src="project screenshots\DockerCon - 1.png" class=popup-img>
-<img src="project screenshots\DockerCon - 2.png" class=popup-img>
-<img src="project screenshots\DockerCon - 3.png" class=popup-img>
-<img src="project screenshots\DockerCon - 4.png" class=popup-img>
-<img src="project screenshots\DockerCon - 5.png" class=popup-img>
-<img src="project screenshots\DockerCon - 6.png" class=popup-img>
-<img src="project screenshots\DockerCon - 7.png" class=popup-img>
-<img src="project screenshots\DockerCon - 8.png" class=popup-img>
-<img src="project screenshots\DockerCon - 9.png" class=popup-img>
-<img src="project screenshots\DockerCon - 10.png" class=popup-img>
-<p2>
-<br><strong>Conclusion</strong>
-By following these steps, I successfully deployed my containerized application using Amazon ECS. This hands-on experience significantly enhanced my understanding of container orchestration and the advantages of using managed services like ECS. I was impressed by ECS's ability to manage containerized workloads efficiently, offering scalability, high availability, and optimized resource utilization.
-</p2>
-</div>
-<div class=overlay onclick=toggleCard(this)></div>
-<p1>Deployed a Container on Amazon ECS</p1>
-<p>Deployed a containerized application utilizing Amazon Elastic Container Service (ECS). Successfully configured and managed the container's environment within an ECS cluster. Acquired practical experience in cloud-based container deployment.
-</p>
-</div>
-<div id=imageModal class=modal>
-<span class=close>&times;</span>
-<img class=modal-content id=modalImage>
-<div class=caption></div>
-<a class=prev>&#10094;</a>
-<a class=next>&#10095;</a>
-</div>
-<div class=project>
-<div class=date>Aug<br>2024</div>
-<div class=icon>
-<h4>Automated Serverless EC2 Instance Scheduling for Cost Optimization</h4>
-<img src="icons\view more icon.svg" onclick=toggleCard(this)>
-</div>
-<div id=popup-card class=popup-card>
-<div class=close-btn onclick=toggleCard(this)>×</div>
-<h5>
-Developed a serverless solution using AWS Lambda and CloudWatch Events to automate the start and stop of EC2 instances according to company working hours.
-</h5>
-<p2>The goal of this project is to automate the starting and stopping of AWS EC2 instances according to company working hours using AWS Lambda functions and CloudWatch Events. This serverless solution is efficient, cost-effective, and eliminates the need to run EC2 instances 24/7.</p2>
-<div class=arc>
-<img src="Architectures images\Serverless EC2 Instance Scheduler for Company Working Hours (Updated).svg">
-</div>
-<p2>
-<br><strong>EC2 Instance and IAM Setup</strong>
-Configured EC2 instances in the AWS Management Console to match specific company requirements.
-<br>Created and assigned IAM policies and roles to manage permissions for starting and stopping EC2 instances, ensuring secure and controlled access.
-</p2>
-<p2>
-<br><strong>Lambda Functions Development</strong>
-Developed two AWS Lambda functions to automate the management of EC2 instances:
-<br>One function to start instances at the beginning of the workday.
-<br>Another function to stop instances at the end of the workday.
-<br>Integrated these Lambda functions with the appropriate IAM roles to enforce security policies.
-</p2>
-<p2>
-<br><strong>CloudWatch Events Scheduling</strong>
-With the task definition ready, I created an ECS service. This service determined the desired number of instances of my container to run and managed their lifecycle.
-</p2>
-<p2>
-<br><strong>Network Configuration</strong>
-Set up Amazon CloudWatch Events to trigger the Lambda functions at specific times:
-<br>Scheduled the instance start function for 8:00 AM daily.
-<br>Scheduled the instance stop function for 5:00 PM daily.
-<br>Ensured seamless and automated operation of EC2 instances within defined working hours.
-</p2>
-<p2>
-<br><strong>Cost Efficiency</strong>
-By scheduling EC2 instances to start and stop only during business hours, the company reduces unnecessary running costs associated with 24/7 operation.
-</p2>
-<p2>
-<br><strong>Automated Management</strong>
-Utilizes AWS Lambda and CloudWatch Events to automate instance management, reducing manual intervention and administrative overhead
-</p2>
-<p2>
-<br><strong>Scalability and Flexibility</strong>
-The serverless architecture allows for easy scalability and modifications to the schedule without impacting the underlying infrastructure.
-</p2>
-<p2>
-<br><strong>Improved Resource Utilization</strong>
-Ensures that cloud resources are used optimally, only when needed, which aligns with the best practices for cloud resource management.
-</p2>
-<img src="project screenshots\CostOpt - 1.png" class=popup-img>
-<img src="project screenshots\CostOpt - 2.png" class=popup-img>
-<img src="project screenshots\CostOpt - 3.png" class=popup-img>
-<img src="project screenshots\CostOpt - 4.png" class=popup-img>
-<img src="project screenshots\CostOpt - 5.png" class=popup-img>
-<img src="project screenshots\CostOpt - 6.png" class=popup-img>
-<img src="project screenshots\CostOpt - 7.png" class=popup-img>
-<img src="project screenshots\CostOpt - 8.png" class=popup-img>
-<img src="project screenshots\CostOpt - 9.png" class=popup-img>
-<img src="project screenshots\CostOpt - 10.png" class=popup-img>
-<img src="project screenshots\CostOpt - 11.png" class=popup-img>
-<img src="project screenshots\CostOpt - 12.png" class=popup-img>
-<img src="project screenshots\CostOpt - 13.png" class=popup-img>
-<img src="project screenshots\CostOpt - 14.png" class=popup-img>
-<p2>
-<br><strong>Conclusion</strong>
-By following these steps, I implemented a serverless solution to automate the management of EC2 instances based on company working hours. This hands-on project enhanced my understanding of AWS Lambda, CloudWatch Events, and IAM roles and policies. It demonstrated how serverless solutions can effectively manage cloud resources, optimize costs, and provide flexibility in cloud operations.
-</p2>
-</div>
-<div class=overlay onclick=toggleCard(this)></div>
-<p1>Developed a serverless solution using AWS Lambda and CloudWatch Events to automate the start and stop of EC2 instances according to company working hours.</p1>
-<p>The goal of this project is to automate the starting and stopping of AWS EC2 instances according to company working hours using AWS Lambda functions and CloudWatch Events. This serverless solution is efficient, cost-effective, and eliminates the need to run EC2 instances 24/7.
-</p>
-</div>
-<div id=imageModal class=modal>
-<span class=close>&times;</span>
-<img class=modal-content id=modalImage>
-<div class=caption></div>
-<a class=prev>&#10094;</a>
-<a class=next>&#10095;</a>
-</div>
-<div class=project>
-<div class=date>Aug<br>2024</div>
-<div class=icon>
-<h4>Enlivena: Spark a Healthier You</h4>
-<img src="icons\view more icon.svg" onclick=toggleCard(this)>
-</div>
-<div id=popup-card class=popup-card>
-<div class=close-btn onclick=toggleCard(this)>×</div>
-<h5>
-Enlivena: Spark a Healthier You
-</h5>
-<p2>
-<br><strong>Project Overview</strong>
-Enlivena is an AI-powered nutrition chatbot developed on the AWS PartyRock platform. It offers personalized meal plans, interactive guidance, and visually appealing food recommendations. By analyzing individual health goals, dietary preferences, and lifestyle factors, Enlivena empowers users to make informed choices and improve their overall well-being.
-<br>As an AI enthusiast with a passion for health and wellness, I embarked on a project to create a personalized nutrition chatbot: Enlivena. Leveraging the powerful capabilities of AWS PartyRock, a platform designed to streamline AI development, I was able to bring this vision to life.
-<br>I chose the name Enlivena for the chatbot to reflect its core mission: to invigorate and enhance users' wellness journeys. Derived from the word "enliven," which means to make something more lively and energizing, Enlivena embodies the essence of revitalization and positive transformation in health.
-</p2>
-<p2>
-<br><strong>Development</strong>
-The development process with AWS PartyRock was a breeze. The platform's pre-built components and integration capabilities allowed me to focus on the core functionality of Enlivena, rather than getting bogged down in technical complexities. This accelerated development time and ensured a seamless user experience.
-</p2>
-<p2>
-<br><strong>Image Generation</strong>
-For generating high-quality images, I used Stable Diffusion XL, a state-of-the-art latent diffusion model. This model leverages denoising diffusion probabilistic models (DDPMs) to iteratively refine image outputs, resulting in photorealistic images based on textual prompts. The architecture of Stable Diffusion XL is particularly effective at generating detailed and contextually accurate visuals.
-</p2>
-<p2>
-<br><strong>Text Generation</strong>
-To handle text generation, I implemented Claude 3 Sonnet, a sophisticated AI model known for its natural language processing capabilities. Claude 3 Sonnet is built on a transformer-based architecture optimized for generating contextually relevant and creative text. This model is ideal for producing coherent and engaging content across diverse topics.
-</p2>
-<p2>
-<br><strong>Interactive Conversational AI</strong>
-For the chatbot functionality, I integrated Llama 3.1 Instruct 70b, a large language model designed for dynamic and interactive dialogues. With its 70 billion parameters, Llama 3.1 Instruct 70b provides advanced conversational capabilities, delivering human-like responses that enhance user interactions. This model is particularly well-suited for applications requiring a nuanced understanding of context and natural language.
-</p2>
-<p2>
-<br><strong>Future Improvements</strong>
-To further enhance this application, I am considering several improvements
-</p2>
-<p2>
-<br><strong>Model Fine-Tuning</strong>
-I plan to fine-tune each AI model on domain-specific datasets to improve the accuracy and relevance of generated content. By retraining the models with targeted data, I can refine their outputs to better align with specific use cases or audience needs.
-</p2>
-<p2>
-<br><strong>Enhanced Model Integration</strong>
-Developing a more sophisticated orchestration layer to manage interactions between the models could improve performance. This would involve creating a context-aware system that dynamically switches between models based on user inputs, ensuring a more seamless and efficient user experience.
-</p2>
-<img src="project screenshots\Enlivena - Information - 1.png" class=popup-img>
-<img src="project screenshots\Enlivena - Health Conditions - 2.png" class=popup-img>
-<img src="project screenshots\Enlivena - Goals - 3.png" class=popup-img>
-<img src="project screenshots\Enlivena - Recommendations - 4.png" class=popup-img>
-<img src="project screenshots\Enlivena - Image - 5.png" class=popup-img>
-<p2>
-<br><strong>Prompt Engineering</strong>
-Crafting effective prompts to guide the AI models was crucial in ensuring the quality and relevance of Enlivena's responses. I learned the importance of specificity, clarity, and context in prompt design.
-</p2>
-<p2>
-<br><strong>Foundation Models</strong>
-Working with foundation models like Llama 3.1 Instruct 70b, Stable Diffusion XL, and Claude 3 Sonnet provided valuable insights into their strengths and weaknesses. I gained a better understanding of their capabilities and limitations in different domains.
-</p2>
-<p2>
-<br><strong>AWS PartyRock</strong>
-The AWS PartyRock platform proved to be a valuable tool for rapid development and deployment. Its user-friendly interface and pre-built components simplified the process of integrating different AI models and creating a cohesive user experience.
-</p2>
-<p2>
-<br><strong>Conclusion</strong>
-Overall, the development of Enlivena has been a valuable learning experience, and I am excited about its potential to positively impact individuals' health and well-being. As AI technology continues to advance, I look forward to exploring new opportunities for enhancing Enlivena's capabilities and expanding its reach.
-</p2>
-</div>
-<div class=overlay onclick=toggleCard(this)></div>
-<p1>A personalized AI-powered nutrition chatbot developed on the AWS PartyRock platform</p1>
-<p>Enlivena is an AI-powered nutrition chatbot developed on the AWS PartyRock platform. It offers personalized meal plans, interactive guidance, and visually appealing food recommendations. By analyzing individual health goals, dietary preferences, and lifestyle factors, Enlivena empowers users to make informed choices and improve their overall well-being.
-</p>
-</div>
-<div id=imageModal class=modal>
-<span class=close>&times;</span>
-<img class=modal-content id=modalImage>
-<div class=caption></div>
-<a class=prev>&#10094;</a>
-<a class=next>&#10095;</a>
-</div>
-<div class=project>
-<div class=date>Mar<br>2024</div>
-<div class=icon>
-<h4>Amazon Product Analysis</h4>
-<img src="icons\view more icon.svg" onclick=toggleCard(this)>
-</div>
-<div class=popup-card>
-<div class=close-btn onclick=toggleCard(this)>×</div>
-<h5>
-Created Data Visualizations using Amazon S3 and Amazon Quicksight, working with a large data set of best selling Amazon products
-</h5>
-<p2>
-Created interactive data visualizations using Amazon QuickSight and data stored in Amazon S3. Processed and analyzed a large data set of best-selling Amazon products to extract valuable insights. Utilized QuickSight's advanced features to create dynamic dashboards and reports, enhancing data accessibility and decision-making.</p2>
-<div class=arc>
-<img src="Architectures images\Data Viz's - QuickSight.svg">
-</div>
-<p2>
-For this project, I set out to visualize a large dataset using Amazon QuickSight. Here’s how I approached it:</p2>
-<p2>
-<br><strong>Data Acquisition:</strong>
-1. I began by downloading a dataset containing 50,000 best-selling Amazon products from GitHub.
-<br>2. After downloading, I saved the dataset, which was in CSV format, locally for the next steps.
-</p2>
-<p2>
-<br><strong>Data Storage:</strong>
-1. I created an Amazon S3 bucket named 'amazon-data-viz-project' using the AWS Management Console.
-<br>2. I then uploaded the CSV dataset to the S3 bucket I had just created.
-</p2>
-<p2>
-<br><strong>Data Integration with QuickSight:</strong>
-1. I set up an Amazon QuickSight account and linked it to the S3 bucket containing my dataset.
-<br>2. I imported a new dataset into QuickSight using an S3 manifest file I created to provide the necessary metadata.
-</p2>
-<p2>
-<br><strong>Data Visualization:</strong>
-1. Within QuickSight, I created an interactive sheet to visualize the imported dataset.
-<br>2. I generated a bar chart to display the most popular brands based on product frequencyin the dataset.
-<br>3. To highlight the most frequently occurring brands, I sorted the chart in descending order.
-<br>4. I explored additional visualizations, such as comparisons of product prices, top-selling product titles, and seller performance, utilizing various chart types offered by QuickSight.
-</p2>
-<img src="project screenshots\Product Analysis - 1.png" class=popup-img>
-<img src="project screenshots\Product Analysis - 2.png" class=popup-img>
-<img src="project screenshots\Product Analysis - 3.png" class=popup-img>
-<img src="project screenshots\Product Analysis - 4.png" class=popup-img>
-<p2>
-<br><strong>Conclusion:</strong>
-This project effectively leveraged Amazon QuickSight to visualize and analyze a large dataset. By systematically following each step, I was able to transform raw data stored in Amazon S3 into insightful visualizations. These visualizations provided a comprehensive overview of key metrics, such as brand popularity, product pricing, top-selling items, and seller performance. The process demonstrated the capabilities of Amazon QuickSight as a powerful tool for data-driven decision-making and highlighted its potential to derive meaningful insights from extensive datasets.
-</p2>
-</div>
-<div class=overlay onclick=toggleCard(this)></div>
-<p1>Created Data Visualizations using Amazon S3 and Amazon Quicksight, working with a large data set of best selling Amazon products</p1>
-<p>Created interactive data visualizations using Amazon QuickSight and data stored in Amazon S3. Processed and analyzed a large data set of best-selling Amazon products to extract valuable insights. Utilized QuickSight's advanced features to create dynamic dashboards and reports, enhancing data accessibility and decision-making.
-</p>
-</div>
-<div id=imageModal class=modal>
-<span class=close>&times;</span>
-<img class=modal-content id=modalImage>
-<div class=caption></div>
-<a class=prev>&#10094;</a>
-<a class=next>&#10095;</a>
-</div>
-<div class=project>
-<div class=date>Nov<br>2023</div>
-<div class=icon>
-<h4>S3 Web Hosting</h4>
-<img src="icons\view more icon.svg" onclick=toggleCard(this)>
-</div>
-<div id=popup-card class=popup-card>
-<div class=close-btn onclick=toggleCard(this)>×</div>
-<h5>
-Built & hosted a static website on AWS using Amazon S3
-</h5>
-<p2>
-<br><strong>Project Overview</strong>
-This project involves building and hosting a static website using Amazon S3 (Simple Storage Service) on AWS (Amazon Web Services). The main goals were to leverage S3's scalable and reliable storage for hosting static web content (like HTML, CSS, and JavaScript files) and to implement best practices for performance, security, and cost-effectiveness.
-</p2>
-<div class=arc>
-<img src="Architectures images\S3 Web Hosting Architecture.svg">
-</div>
-<p2>
-<br><strong>Configuring Website Hosting</strong>
-I started by creating an S3 bucket using the AWS Management Console. This bucket would act as the storage location for all the files that make up my website.
-</p2>
-<p2>
-<br><strong>Setting Object Permissions</strong>
-With the hosting configured, I uploaded all the necessary files for my website, including HTML, CSS, JavaScript, and images, to the S3 bucket.
-</p2>
-<p2>
-<br><strong>Task Definition Creation</strong>
-To make my website publicly accessible, I adjusted the permissions of the uploaded files to ensure they were publicly readable. This allowed anyone with the website's URL to access and view the content.
-</p2>
-<img src="project screenshots\S3 Web - 1.png" class=popup-img>
-<img src="project screenshots\S3 Web - 2.png" class=popup-img>
-<img src="project screenshots\S3 Web - 3.png" class=popup-img>
-<img src="project screenshots\S3 Web - 4.png" class=popup-img>
-<img src="project screenshots\S3 Web - 5.png" class=popup-img>
-<p2>
-<br><strong>Conclusion</strong>
-By following these steps, I successfully hosted my static website on AWS S3. The process was both straightforward and efficient, providing me with a cost-effective and scalable solution for hosting my site. Leveraging S3 for website hosting not only simplified deployment but also ensured that my website could handle varying levels of traffic with ease.
-</p2>
-</div>
-<div class=overlay onclick=toggleCard(this)></div>
-<p1>Built & hosted a static website on AWS using Amazon S3</p1>
-<p>Built and hosted a static website using Amazon S3, leveraging its scalable storage solution to deliver content efficiently. Implemented best practices for website performance and security, including configuring bucket policies and enabling static website hosting features. Achieved a highly available and cost-effective hosting solution, demonstrating proficiency in cloud services and web technologies.
-</p>
-</div>
-<div id=imageModal class=modal>
-<span class=close>&times;</span>
-<img class=modal-content id=modalImage>
-<div class=caption></div>
-<a class=prev>&#10094;</a>
-<a class=next>&#10095;</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class=divider-container></div>
-<div id=certifications class=heading-container>
-<div class=heading-container>
-<h3 id=certifications-main-heading>Certifications</h3>
-<div class=carousel>
-<div class=carousel-card>
-<div class=card-icon>
-<img src=icons\amazon-web-services-2.svg width=80 height=80>
-<div class=cert-preview>
-<img src="cert\Thumbnail - AWS Cloud Support Associate (Coursera).jpg" alt="Certificate Preview">
-</div>
-</div>
-<a href="cert\AWS Cloud Support Associate (Coursera).pdf" class=title>AWS Cloud Support Associate</a>
-<div class=text>Amazon Web Services | 2024</div>
-</div>
-<div class=carousel-card>
-<div class=card-icon>
-<img src=icons\amazon-web-services-2.svg width=80 height=80>
-<div class=cert-preview>
-<img src="cert\Thumbnail - Architecting Solutions on AWS (Coursera).jpg" alt="Certificate Preview">
-</div>
-</div>
-<a href="cert\Architecting Solutions on AWS (Coursera).pdf" class=title>Architecting Solutions on AWS</a>
-<div class=text>Amazon Web Services | 2024</div>
-</div>
-<div class=carousel-card>
-<div class=card-icon>
-<img src="icons\google icon.svg" width=80 height=80>
-<div class=cert-preview>
-<img src="cert\Thumbnail - Google AI Essentials (Coursera).jpg" alt="Certificate Preview">
-</div>
-</div>
-<a href="cert\Google AI Essentials (Coursera).pdf" class=title>Google AI Essentials</a>
-<div class=text>Google | 2024</div>
-</div>
-<div class=carousel-card>
-<div class=card-icon>
-<img src=icons\amazon-web-services-2.svg width=80 height=80>
-<div class=cert-preview>
-<img src="cert\Thumbnail - AWS Cloud Technical Essentials.jpg" alt="Certificate Preview">
-</div>
-</div>
-<a href="cert\AWS Cloud Technical Essentials.pdf" class=title>AWS Cloud Technical Essentials</a>
-<div class=text>Amazon Web Services | 2024</div>
-</div>
-<div class=carousel-card>
-<div class=card-icon>
-<img src=icons\amazon-web-services-2.svg width=80 height=80>
-<div class=cert-preview>
-<img src="cert\Thumbnail - Data Analytics with AWS (Coursera).jpg" alt="Certificate Preview">
-</div>
-</div>
-<a href="cert\Data Analytics with AWS (Coursera).pdf" class=title>Getting Started with Data Analytics on AWS</a>
-<div class=text>Amazon Web Services | 2022</div>
-</div>
-<div class=carousel-card>
-<div class=card-icon>
-<img src=icons\university-of-michigan-3.svg width=80 height=80>
-<div class=cert-preview>
-<img src="cert\Thumbnail - Programming For Everybody (Coursera).jpg" alt="Certificate Preview">
-</div>
-</div>
-<a href="cert\Programming For Everybody (Coursera).pdf" class=title>Programming For Everybody<br>(Getting started with Python)</a>
-<div class=text>University of Michigan | 2022</div>
-</div>
-</div>
-</div>
-</div>
-<div class=divider-container></div>
-<div id=beyond-tech>
-<div class=info-container>
-<div class=info-box>
-<h4><span>Beyond</span>&nbsp;the Tech</h4>
-<p><br>When I'm not geeking out over <span>cloud computing</span> you'll catch me in a whole different world of fun:<br>
-<br>- Hitting the ping pong table to relax.
-<br>- Capturing life's quirky moments through my camera lens.
-<br>- Perfecting my swirls and loops in calligraphy.<br>
-<br>I'm also into podcasts that dig into philosophy, psychology, history, political science, and economics.<br>
-<br>I love learning about new stuff, but I'm also all about treating people with respect and lending a hand whenever I can. I'm excited to find a place where I can bring my blend of creativity and tech skills to make a real impact while keeping things fun and evolving along the way.
-</p>
-</div>
-</div>
-</div>
-<div class=divider-container></div>
-<div id=contact>
-<div class=contact-container>
-<a href=https://www.linkedin.com/in/themohammadsaim/ >
-<img src="icons\linkedin icon.svg">
-</a>
-<a href=https://github.com/themohammadsaim>
-<img src="icons\github icon.svg">
-</a>
-<a href=https://www.credly.com/users/themohammadsaim>
-<img src="icons\credly icon.svg">
-</a>
-<a href=https://medium.com/@themohammadsaim>
-<img src="icons\medium icon.svg">
-</a>
-<a href=mailto:themohammadsaim@gmail.com>
-<img src="icons\gmail icon.svg">
-</a>
-</div>
-</div>
+    <nav class=timeline-nav>
+        <ul>
+            <li><a href=#intro>Intro</a></li>
+            <li><a href=#techs>Techs</a></li>
+            <li><a href=#projects>Projects</a></li>
+            <li><a href=#certifications>Certifications</a></li>
+            <li><a href=#beyond-tech>Beyond the Tech</a></li>
+            <li><a href=#contact>Socials</a></li>
+        </ul>
+    </nav>
+    <div id=intro class=container>
+        <div class=container>
+            <h1>Hey there!<br>I'm Mohammad Saim
+            </h1>
+            <p>
+                Computer Science graduate with one year of front-end development experience in HTML, CSS and Designing
+                tools, with a strong passion for cloud computing, particularly AWS
+            </p>
+        </div>
+    </div>
+    <div class=divider-container></div>
+    <div class=accordion-container>
+        <div class=accordion>
+            <button class=accordion-button>
+                <span class=accordion-title>Education</span>
+                <span class=accordion-icon>+</span>
+            </button>
+            <div class=accordion-content>
+                <p>University of Mumbai - BSc in Computer Science <br>Graduated: 2022 <br>GPA: 9.03
+                </p>
+            </div>
+        </div>
+        <div class=accordion>
+            <button class=accordion-button>
+                <span class=accordion-title>Personal Attributes and Interests</span>
+                <span class=accordion-icon>+</span>
+            </button>
+            <div class=accordion-content>
+                <p>
+                    Beyond my technical abilities, I am actively involved in creative activities such as calligraphy,
+                    photography, painting, and sketching. I have also demonstrated leadership and teamwork as the
+                    captain of my soccer team and have been recognized as the best ping pong player during my school
+                    years. I am always eager to learn and embrace new challenges in the tech domain.
+                </p>
+                <div class=image-gallery>
+                    <img src="accordion images\12 O'Clock.jpg">
+                    <img src="accordion images\MH beach.jpg">
+                    <img src="accordion images\Arch.jpg">
+                    <img src="accordion images\MH top view.jpg">
+                    <img src="accordion images\Building.jpg">
+                    <img src="accordion images\Restaurant.jpg">
+                    <img src="accordion images\Rays.jpg">
+                    <img src="accordion images\Copperplate Script.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id=imageModal class=modal>
+        <span class=close>&times;</span>
+        <img class=modal-content id=modalImage>
+        <a class=prev>&#10094;</a>
+        <a class=next>&#10095;</a>
+    </div>
+    <div class=divider-container></div>
+    <div id=techs class=heading-container>
+        <div class=heading-container>
+            <h3 id=techs-main-heading>Techs</h3>
+            <h2>Always ready to dive into data viz's and <span>cloud</span> stuff</h2>
+        </div>
+        <div class=card>
+            <div class=grid>
+                <img src=icons\amazon-web-services-2.svg alt="Image 2">
+                <img src=icons\python-logo-only.svg alt="Image 1">
+                <img src=icons\html-1.svg alt="Image 4">
+                <img src=icons\css-3.svg alt="Image 5">
+                <img src=icons\linux.svg alt="Image 6">
+                <img src=icons\docker-4.svg alt="Image 3">
+                <img src=icons\mysql-3.svg alt="Image 7">
+                <img src=icons\visual-studio-code-1.svg alt="Image 8">
+                <img src=icons\github-icon-1.svg alt="Image 9">
+            </div>
+        </div>
+    </div>
+    <div class=divider-container></div>
+    <div id=projects class=heading-container>
+        <div class=heading-container>
+            <h3 id=project-main-heading>Projects</h3>
+            <div class=timeline>
+                <div class=project-box>
+
+                    <div class="project">
+                        <div class="date">Nov<br>2024</div>
+
+                        <!-- icon & popup card -->
+                        <div class="icon">
+                            <h4>Multi-AZ VPC Deployment</h4>
+                            <img src="icons\view more icon.svg" onclick="toggleCard(this)">
+                        </div>
+
+                        <div id="popup-card" class="popup-card">
+                            <div class="close-btn" onclick="toggleCard(this)">×</div>
+                            <h5>
+                                Production-grade network infrastructure with isolated public and private subnets
+                            </h5>
+                            <p2>Designed and implemented a highly available Virtual Private Cloud (VPC) infrastructure
+                                on Amazon Web Services (AWS) with distinct network tiers. The architecture features
+                                public and private subnets across multiple Availability Zones, secured internet access
+                                through Internet Gateways, and comprehensive network access controls using Network ACLs
+                                and
+                                Security Groups.</p2>
+
+                            <div class="arc">
+                                <img src="architectures images\VPC Deployment.svg">
+                            </div>
+
+                            <p2>
+                                <br><strong>VPC Creation</strong>
+                                I started by creating a new VPC named "HYD VPC" with a CIDR block of 10.0.0.0/16. This
+                                VPC would serve as the foundation for the entire infrastructure. <br>
+                            </p2>
+
+                            <p2>
+                                <br><strong>Subnet Creation</strong>
+                                Next, I proceeded to create the 10 subnets within the VPC, ensuring that the required
+                                configuration was met. I defined 5 public subnets and 5 private subnets, each with a
+                                specific CIDR block:
+                                <br>Public Subnets:
+
+                                <br>- Subnet 1 (AZ-A): 10.0.0.0/20
+
+                                <br>- Subnet 2 (AZ-B): 10.0.32.0/20
+
+                                <br>- Subnet 3 (AZ-C): 10.0.64.0/20
+
+                                <br>- Subnet 4 (AZ-B): 10.0.96.0/20
+
+                                <br>- Subnet 5 (AZ-C): 10.0.128.0/20<br>
+
+                                <br>Private Subnets:
+
+                                <br>- Subnet 1 (AZ-B): 10.0.16.0/20
+
+                                <br>- Subnet 2 (AZ-C): 10.0.48.0/20
+
+                                <br>- Subnet 3 (AZ-A): 10.0.80.0/20
+
+                                <br>- Subnet 4 (AZ-B): 10.0.112.0/20
+
+                                <br>- Subnet 5 (AZ-C): 10.0.144.0/20
+
+                                <br>This arrangement ensured that the public and private subnets were logically
+                                separated
+                                within the VPC. <br>
+                            </p2>
+
+                            <p2>
+                                <br><strong>Internet Gateway Creation</strong>
+                                To provide internet connectivity to the public subnets, I created an Internet Gateway
+                                named "HYD VPC Internet Gateway" and attached it to the VPC. <br>
+                            </p2>
+
+                            <p2>
+                                <br><strong>Route Table Configuration</strong>
+                                I then created two route tables: one for the public subnets and one for the private
+                                subnets.
+
+                                <br>The Public Route Table ("PUBLIC RT") was associated with all the public subnets and
+                                had
+                                a route to the Internet Gateway for 0.0.0.0/0, allowing internet access.
+
+                                <br>The Private Route Table ("PRIVATE RT") was associated with all the private subnets
+                                and had a route to the Public Route Table for 10.0.0.0/16, enabling internal
+                                communication within the VPC.
+                                <br>
+                            </p2>
+
+                            <p2>
+                                <br><strong>Network ACL Configuration</strong>
+                                To control the inbound and outbound traffic to the subnets, I created a Network ACLs:
+                                <br>-I associated Network ACL with all the public and private subnets. <br>
+                            </p2>
+                            <p2>
+                                <br><strong>Security Group Configuration</strong>
+                                I defined two security groups to manage the traffic within the VPC:
+                                <br>- Public Subnet Security Group ("HYD Public SG") allowed all inbound and outbound
+                                <br>- Private Subnet Security Group ("HYD Private SG ") allowed all inbound and outbound
+                                traffic within the VPC.
+                                traffic. <br>
+                                These security groups were then assigned to the respective EC2 instances launched in
+                                the public and private subnets. <br>
+                            </p2>
+                            <p2>
+                                <br><strong>EC2 Instance Deployment</strong>
+                                Finally, I launched 10 EC2 instances, with 5 instances in the public subnets and 5
+                                instances in the private subnets. The instances were named accordingly, such as " [A]
+                                HYD Public EC2 2b" and "[A] HYD Private EC2 2b".<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Verification and Testing</strong>
+                                After completing the deployment, I conducted a series of verification steps to ensure
+                                the proper functioning of the VPC setup: <br>
+                            </p2>
+
+
+                            <img src="project screenshots\VPC Dep - 1.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 2.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 3.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 4.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 5.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 6.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 7.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 8.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 9.png" class="popup-img">
+                            <img src="project screenshots\VPC Dep - 10.png" class="popup-img">
+
+
+                            <p2>
+                                <br><strong>Conclusion</strong>
+                                The VPC deployment in the Hyderabad region has been successfully completed, meeting all
+                                the requirements set forth for the project. The public subnets are now connected to the
+                                internet, while the private subnets remain isolated, ensuring a secure and
+                                well-structured cloud infrastructure. The verification steps confirmed the proper
+                                functioning of the VPC and its components, giving me confidence in the overall solution.
+                            </p2>
+
+
+                        </div>
+
+                        <div class="overlay" onclick="toggleCard(this)"></div>
+
+                        <p1>Production-grade network infrastructure with isolated public and private subnets</p1>
+
+                        <p>Designed and implemented a highly available Virtual Private Cloud (VPC) infrastructure on
+                            Amazon Web Services (AWS) with distinct network tiers. The architecture features public and
+                            private subnets across multiple Availability Zones, secured internet access through Internet
+                            Gateway, and comprehensive network access controls using Network ACLs and Security Groups.
+                        </p>
+                    </div>
+                    <div id="imageModal" class="modal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                        <div class="caption"></div>
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+                    </div>
+                    <div class=project>
+                        <div class=date>Oct<br>2024</div>
+                        <div class=icon>
+                            <h4>Deploying WordPress on AWS EC2</h4>
+                            <img src="icons\view more icon.svg" onclick=toggleCard(this)>
+                        </div>
+                        <div id=popup-card class=popup-card>
+                            <div class=close-btn onclick=toggleCard(this)>×</div>
+                            <h5>
+                                Deploying WordPress on AWS EC2
+                            </h5>
+                            <p2>Successfully deployed a WordPress website on an Amazon Web Services (AWS) Elastic
+                                Compute Cloud (EC2) instance using Ubuntu Server. The implementation includes secure
+                                networking configuration, stable database setup, and a scalable application
+                                architecture.</p2>
+                            <div class=arc>
+                                <img src="Architectures images\WordPress Deployment on EC2.svg">
+                            </div>
+                            <p2>
+                                <br><strong>EC2 Instance Configuration</strong>
+                                1. Launched a new EC2 instance named "WordPress_Server"
+                                <br>2. Selected Ubuntu Amazon Machine Image (AMI) from the AMI Dashboard
+                                <br>3. Generated new Key Pair for secure SSH access
+                                <br>4. Configured network settings to allow HTTP and HTTPS traffic from the internet
+                                <br>5. Maintained default settings for other configurations to ensure standard
+                                deployment<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Network Configuration</strong>
+                                1. Allocated and associated an Elastic IP address to the instance
+                                <br>2. This ensures persistent IP addressing, crucial for:
+                                <br> - DNS resolution stability
+                                <br> - Consistent website accessibility
+                                <br> - Maintaining uninterrupted service during instance reboots<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Initial Access</strong>
+                                - Established secure SSH connection to the instance using the generated Key Pair<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Web Server Installation</strong>
+                                - Deployed Apache2 web server
+                                <br>Configured basic server settings for optimal performance<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Runtime Environment Setup</strong>
+                                1. Installed PHP runtime environment
+                                <br>2. Implemented MySQL connector for PHP
+                                <br>3. Established database connectivity<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Database Configuration</strong>
+                                1. Installed MySQL server
+                                <br>2. Created dedicated database user with secure credentials
+                                <br>3. Configured new database for WordPress
+                                <br>4. Assigned necessary administrative permissions to the database user<br>
+                            </p2>
+                            <p2>
+                                <br><strong>WordPress Setup</strong>
+                                1. Configured WordPress installation parameters:
+                                <br>- Set up administrative username
+                                <br>- Established secure password
+                                <br>- Configured administrative email
+                                <br>2. Successfully completed initial login and verification<br>
+                            </p2>
+                            <img src="project screenshots\WP - 1.png" class=popup-img>
+                            <img src="project screenshots\WP - 2.png" class=popup-img>
+                            <img src="project screenshots\WP - 3.png" class=popup-img>
+                            <img src="project screenshots\WP - 4.png" class=popup-img>
+                            <img src="project screenshots\WP - 5.png" class=popup-img>
+                            <img src="project screenshots\WP - 6.png" class=popup-img>
+                            <img src="project screenshots\WP - 7.png" class=popup-img>
+                            <img src="project screenshots\WP - 8.png" class=popup-img>
+                            <img src="project screenshots\WP - 9.png" class=popup-img>
+                            <img src="project screenshots\WP - 10.png" class=popup-img>
+                            <img src="project screenshots\WP - 11.png" class=popup-img>
+                            <img src="project screenshots\WP - 12.png" class=popup-img>
+                            <img src="project screenshots\WP - 13.png" class=popup-img>
+                            <img src="project screenshots\WP - 14.png" class=popup-img>
+                            <p2>
+                                <br><strong>Conclusion</strong>
+                                The WordPress website has been successfully deployed on the AWS EC2 instance. The
+                                implementation ensures:
+                                <br>- Secure access through proper networking configuration
+                                <br>- Stable hosting environment with persistent IP addressing
+                                <br>- Robust database backend with secure user permissions
+                                <br>- Fully functional WordPress content management system<br>
+                            </p2>
+                        </div>
+                        <div class=overlay onclick=toggleCard(this)></div>
+                        <p1>Secure and scalable WordPress hosting solution on Amazon Web Services
+                        </p1>
+                        <p>
+                            Successfully deployed a WordPress website on an Amazon Web Services (AWS) Elastic Compute
+                            Cloud (EC2) instance using Ubuntu Server. The implementation includes secure networking
+                            configuration, stable database setup, and a scalable application architecture.
+                        </p>
+                    </div>
+                    <div id=imageModal class=modal>
+                        <span class=close>&times;</span>
+                        <img class=modal-content id=modalImage>
+                        <div class=caption></div>
+                        <a class=prev>&#10094;</a>
+                        <a class=next>&#10095;</a>
+                    </div>
+                    <div class=project>
+                        <div class=date>Sept<br>2024</div>
+                        <div class=icon>
+                            <h4>Cloud Infrastructure And Deployment</h4>
+                            <img src="icons\view more icon.svg" onclick=toggleCard(this)>
+                        </div>
+                        <div id=popup-card class=popup-card>
+                            <div class=close-btn onclick=toggleCard(this)>×</div>
+                            <h5>
+                                Deployed a Container on Amazon ECS
+                            </h5>
+                            <p2>Deployed a containerized application utilizing Amazon Elastic Container Service (ECS).
+                                Successfully configured and managed the container's environment within an ECS cluster.
+                                Acquired practical experience in cloud-based container deployment.</p2>
+                            <div class=arc>
+                                <img src="Architectures images\Docker ECS Container Architecture.svg">
+                            </div>
+                            <p2>
+                                <br><strong>Cluster Creation</strong>
+                                I began by setting up an ECS cluster on the AWS Management Console. This served as the
+                                foundational structure for managing my containerized application.<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Task Definition Creation</strong>
+                                Next, I defined the specific configuration for my container in a task definition. This
+                                included specifying the container image location (Docker repository), allocating the
+                                necessary memory and CPU resources, and defining port mappings.<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Service Creation</strong>
+                                With the task definition ready, I created an ECS service. This service determined the
+                                desired number of instances of my container to run and managed their lifecycle.<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Network Configuration</strong>
+                                To ensure my application was accessible, I configured the network settings for the
+                                service. I carefully selected the appropriate network mode, such as AWS Fargate or EC2,
+                                based on my project requirements.<br>
+                            </p2>
+                            <p2>
+                                <br><strong>Deployment and Verification</strong>
+                                Once the service was created, ECS handled the deployment of the container instances. I
+                                closely monitored the deployment process to ensure everything went smoothly. After
+                                successful deployment, I accessed my application using the provided endpoint to verify
+                                its functionality.<br>
+                            </p2>
+                            <img src="project screenshots\DockerCon - 1.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 2.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 3.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 4.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 5.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 6.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 7.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 8.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 9.png" class=popup-img>
+                            <img src="project screenshots\DockerCon - 10.png" class=popup-img>
+                            <p2>
+                                <br><strong>Conclusion</strong>
+                                By following these steps, I successfully deployed my containerized application using
+                                Amazon ECS. This hands-on experience significantly enhanced my understanding of
+                                container orchestration and the advantages of using managed services like ECS. I was
+                                impressed by ECS's ability to manage containerized workloads efficiently, offering
+                                scalability, high availability, and optimized resource utilization.
+                            </p2>
+                        </div>
+                        <div class=overlay onclick=toggleCard(this)></div>
+                        <p1>Deployed a Container on Amazon ECS</p1>
+                        <p>Deployed a containerized application utilizing Amazon Elastic Container Service (ECS).
+                            Successfully configured and managed the container's environment within an ECS cluster.
+                            Acquired practical experience in cloud-based container deployment.
+                        </p>
+                    </div>
+                    <div id=imageModal class=modal>
+                        <span class=close>&times;</span>
+                        <img class=modal-content id=modalImage>
+                        <div class=caption></div>
+                        <a class=prev>&#10094;</a>
+                        <a class=next>&#10095;</a>
+                    </div>
+                    <div class=project>
+                        <div class=date>Aug<br>2024</div>
+                        <div class=icon>
+                            <h4>Automated Serverless EC2 Instance Scheduling for Cost Optimization</h4>
+                            <img src="icons\view more icon.svg" onclick=toggleCard(this)>
+                        </div>
+                        <div id=popup-card class=popup-card>
+                            <div class=close-btn onclick=toggleCard(this)>×</div>
+                            <h5>
+                                Developed a serverless solution using AWS Lambda and CloudWatch Events to automate the
+                                start and stop of EC2 instances according to company working hours.
+                            </h5>
+                            <p2>The goal of this project is to automate the starting and stopping of AWS EC2 instances
+                                according to company working hours using AWS Lambda functions and CloudWatch Events.
+                                This serverless solution is efficient, cost-effective, and eliminates the need to run
+                                EC2 instances 24/7.</p2>
+                            <div class=arc>
+                                <img
+                                    src="Architectures images\Serverless EC2 Instance Scheduler for Company Working Hours (Updated).svg">
+                            </div>
+                            <p2>
+                                <br><strong>EC2 Instance and IAM Setup</strong>
+                                Configured EC2 instances in the AWS Management Console to match specific company
+                                requirements.
+                                <br>Created and assigned IAM policies and roles to manage permissions for starting and
+                                stopping EC2 instances, ensuring secure and controlled access.
+                            </p2>
+                            <p2>
+                                <br><strong>Lambda Functions Development</strong>
+                                Developed two AWS Lambda functions to automate the management of EC2 instances:
+                                <br>One function to start instances at the beginning of the workday.
+                                <br>Another function to stop instances at the end of the workday.
+                                <br>Integrated these Lambda functions with the appropriate IAM roles to enforce security
+                                policies.
+                            </p2>
+                            <p2>
+                                <br><strong>CloudWatch Events Scheduling</strong>
+                                With the task definition ready, I created an ECS service. This service determined the
+                                desired number of instances of my container to run and managed their lifecycle.
+                            </p2>
+                            <p2>
+                                <br><strong>Network Configuration</strong>
+                                Set up Amazon CloudWatch Events to trigger the Lambda functions at specific times:
+                                <br>Scheduled the instance start function for 8:00 AM daily.
+                                <br>Scheduled the instance stop function for 5:00 PM daily.
+                                <br>Ensured seamless and automated operation of EC2 instances within defined working
+                                hours.
+                            </p2>
+                            <p2>
+                                <br><strong>Cost Efficiency</strong>
+                                By scheduling EC2 instances to start and stop only during business hours, the company
+                                reduces unnecessary running costs associated with 24/7 operation.
+                            </p2>
+                            <p2>
+                                <br><strong>Automated Management</strong>
+                                Utilizes AWS Lambda and CloudWatch Events to automate instance management, reducing
+                                manual intervention and administrative overhead
+                            </p2>
+                            <p2>
+                                <br><strong>Scalability and Flexibility</strong>
+                                The serverless architecture allows for easy scalability and modifications to the
+                                schedule without impacting the underlying infrastructure.
+                            </p2>
+                            <p2>
+                                <br><strong>Improved Resource Utilization</strong>
+                                Ensures that cloud resources are used optimally, only when needed, which aligns with the
+                                best practices for cloud resource management.
+                            </p2>
+                            <img src="project screenshots\CostOpt - 1.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 2.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 3.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 4.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 5.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 6.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 7.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 8.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 9.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 10.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 11.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 12.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 13.png" class=popup-img>
+                            <img src="project screenshots\CostOpt - 14.png" class=popup-img>
+                            <p2>
+                                <br><strong>Conclusion</strong>
+                                By following these steps, I implemented a serverless solution to automate the management
+                                of EC2 instances based on company working hours. This hands-on project enhanced my
+                                understanding of AWS Lambda, CloudWatch Events, and IAM roles and policies. It
+                                demonstrated how serverless solutions can effectively manage cloud resources, optimize
+                                costs, and provide flexibility in cloud operations.
+                            </p2>
+                        </div>
+                        <div class=overlay onclick=toggleCard(this)></div>
+                        <p1>Developed a serverless solution using AWS Lambda and CloudWatch Events to automate the start
+                            and stop of EC2 instances according to company working hours.</p1>
+                        <p>The goal of this project is to automate the starting and stopping of AWS EC2 instances
+                            according to company working hours using AWS Lambda functions and CloudWatch Events. This
+                            serverless solution is efficient, cost-effective, and eliminates the need to run EC2
+                            instances 24/7.
+                        </p>
+                    </div>
+                    <div id=imageModal class=modal>
+                        <span class=close>&times;</span>
+                        <img class=modal-content id=modalImage>
+                        <div class=caption></div>
+                        <a class=prev>&#10094;</a>
+                        <a class=next>&#10095;</a>
+                    </div>
+                    <div class=project>
+                        <div class=date>Aug<br>2024</div>
+                        <div class=icon>
+                            <h4>Enlivena: Spark a Healthier You</h4>
+                            <img src="icons\view more icon.svg" onclick=toggleCard(this)>
+                        </div>
+                        <div id=popup-card class=popup-card>
+                            <div class=close-btn onclick=toggleCard(this)>×</div>
+                            <h5>
+                                Enlivena: Spark a Healthier You
+                            </h5>
+                            <p2>
+                                <br><strong>Project Overview</strong>
+                                Enlivena is an AI-powered nutrition chatbot developed on the AWS PartyRock platform. It
+                                offers personalized meal plans, interactive guidance, and visually appealing food
+                                recommendations. By analyzing individual health goals, dietary preferences, and
+                                lifestyle factors, Enlivena empowers users to make informed choices and improve their
+                                overall well-being.
+                                <br>As an AI enthusiast with a passion for health and wellness, I embarked on a project
+                                to create a personalized nutrition chatbot: Enlivena. Leveraging the powerful
+                                capabilities of AWS PartyRock, a platform designed to streamline AI development, I was
+                                able to bring this vision to life.
+                                <br>I chose the name Enlivena for the chatbot to reflect its core mission: to invigorate
+                                and enhance users' wellness journeys. Derived from the word "enliven," which means to
+                                make something more lively and energizing, Enlivena embodies the essence of
+                                revitalization and positive transformation in health.
+                            </p2>
+                            <p2>
+                                <br><strong>Development</strong>
+                                The development process with AWS PartyRock was a breeze. The platform's pre-built
+                                components and integration capabilities allowed me to focus on the core functionality of
+                                Enlivena, rather than getting bogged down in technical complexities. This accelerated
+                                development time and ensured a seamless user experience.
+                            </p2>
+                            <p2>
+                                <br><strong>Image Generation</strong>
+                                For generating high-quality images, I used Stable Diffusion XL, a state-of-the-art
+                                latent diffusion model. This model leverages denoising diffusion probabilistic models
+                                (DDPMs) to iteratively refine image outputs, resulting in photorealistic images based on
+                                textual prompts. The architecture of Stable Diffusion XL is particularly effective at
+                                generating detailed and contextually accurate visuals.
+                            </p2>
+                            <p2>
+                                <br><strong>Text Generation</strong>
+                                To handle text generation, I implemented Claude 3 Sonnet, a sophisticated AI model known
+                                for its natural language processing capabilities. Claude 3 Sonnet is built on a
+                                transformer-based architecture optimized for generating contextually relevant and
+                                creative text. This model is ideal for producing coherent and engaging content across
+                                diverse topics.
+                            </p2>
+                            <p2>
+                                <br><strong>Interactive Conversational AI</strong>
+                                For the chatbot functionality, I integrated Llama 3.1 Instruct 70b, a large language
+                                model designed for dynamic and interactive dialogues. With its 70 billion parameters,
+                                Llama 3.1 Instruct 70b provides advanced conversational capabilities, delivering
+                                human-like responses that enhance user interactions. This model is particularly
+                                well-suited for applications requiring a nuanced understanding of context and natural
+                                language.
+                            </p2>
+                            <p2>
+                                <br><strong>Future Improvements</strong>
+                                To further enhance this application, I am considering several improvements
+                            </p2>
+                            <p2>
+                                <br><strong>Model Fine-Tuning</strong>
+                                I plan to fine-tune each AI model on domain-specific datasets to improve the accuracy
+                                and relevance of generated content. By retraining the models with targeted data, I can
+                                refine their outputs to better align with specific use cases or audience needs.
+                            </p2>
+                            <p2>
+                                <br><strong>Enhanced Model Integration</strong>
+                                Developing a more sophisticated orchestration layer to manage interactions between the
+                                models could improve performance. This would involve creating a context-aware system
+                                that dynamically switches between models based on user inputs, ensuring a more seamless
+                                and efficient user experience.
+                            </p2>
+                            <img src="project screenshots\Enlivena - Information - 1.png" class=popup-img>
+                            <img src="project screenshots\Enlivena - Health Conditions - 2.png" class=popup-img>
+                            <img src="project screenshots\Enlivena - Goals - 3.png" class=popup-img>
+                            <img src="project screenshots\Enlivena - Recommendations - 4.png" class=popup-img>
+                            <img src="project screenshots\Enlivena - Image - 5.png" class=popup-img>
+                            <p2>
+                                <br><strong>Prompt Engineering</strong>
+                                Crafting effective prompts to guide the AI models was crucial in ensuring the quality
+                                and relevance of Enlivena's responses. I learned the importance of specificity, clarity,
+                                and context in prompt design.
+                            </p2>
+                            <p2>
+                                <br><strong>Foundation Models</strong>
+                                Working with foundation models like Llama 3.1 Instruct 70b, Stable Diffusion XL, and
+                                Claude 3 Sonnet provided valuable insights into their strengths and weaknesses. I gained
+                                a better understanding of their capabilities and limitations in different domains.
+                            </p2>
+                            <p2>
+                                <br><strong>AWS PartyRock</strong>
+                                The AWS PartyRock platform proved to be a valuable tool for rapid development and
+                                deployment. Its user-friendly interface and pre-built components simplified the process
+                                of integrating different AI models and creating a cohesive user experience.
+                            </p2>
+                            <p2>
+                                <br><strong>Conclusion</strong>
+                                Overall, the development of Enlivena has been a valuable learning experience, and I am
+                                excited about its potential to positively impact individuals' health and well-being. As
+                                AI technology continues to advance, I look forward to exploring new opportunities for
+                                enhancing Enlivena's capabilities and expanding its reach.
+                            </p2>
+                        </div>
+                        <div class=overlay onclick=toggleCard(this)></div>
+                        <p1>A personalized AI-powered nutrition chatbot developed on the AWS PartyRock platform</p1>
+                        <p>Enlivena is an AI-powered nutrition chatbot developed on the AWS PartyRock platform. It
+                            offers personalized meal plans, interactive guidance, and visually appealing food
+                            recommendations. By analyzing individual health goals, dietary preferences, and lifestyle
+                            factors, Enlivena empowers users to make informed choices and improve their overall
+                            well-being.
+                        </p>
+                    </div>
+                    <div id=imageModal class=modal>
+                        <span class=close>&times;</span>
+                        <img class=modal-content id=modalImage>
+                        <div class=caption></div>
+                        <a class=prev>&#10094;</a>
+                        <a class=next>&#10095;</a>
+                    </div>
+                    <div class=project>
+                        <div class=date>Mar<br>2024</div>
+                        <div class=icon>
+                            <h4>Amazon Product Analysis</h4>
+                            <img src="icons\view more icon.svg" onclick=toggleCard(this)>
+                        </div>
+                        <div class=popup-card>
+                            <div class=close-btn onclick=toggleCard(this)>×</div>
+                            <h5>
+                                Created Data Visualizations using Amazon S3 and Amazon Quicksight, working with a large
+                                data set of best selling Amazon products
+                            </h5>
+                            <p2>
+                                Created interactive data visualizations using Amazon QuickSight and data stored in
+                                Amazon S3. Processed and analyzed a large data set of best-selling Amazon products to
+                                extract valuable insights. Utilized QuickSight's advanced features to create dynamic
+                                dashboards and reports, enhancing data accessibility and decision-making.</p2>
+                            <div class=arc>
+                                <img src="Architectures images\Data Viz's - QuickSight.svg">
+                            </div>
+                            <p2>
+                                For this project, I set out to visualize a large dataset using Amazon QuickSight. Here’s
+                                how I approached it:</p2>
+                            <p2>
+                                <br><strong>Data Acquisition:</strong>
+                                1. I began by downloading a dataset containing 50,000 best-selling Amazon products from
+                                GitHub.
+                                <br>2. After downloading, I saved the dataset, which was in CSV format, locally for the
+                                next steps.
+                            </p2>
+                            <p2>
+                                <br><strong>Data Storage:</strong>
+                                1. I created an Amazon S3 bucket named 'amazon-data-viz-project' using the AWS
+                                Management Console.
+                                <br>2. I then uploaded the CSV dataset to the S3 bucket I had just created.
+                            </p2>
+                            <p2>
+                                <br><strong>Data Integration with QuickSight:</strong>
+                                1. I set up an Amazon QuickSight account and linked it to the S3 bucket containing my
+                                dataset.
+                                <br>2. I imported a new dataset into QuickSight using an S3 manifest file I created to
+                                provide the necessary metadata.
+                            </p2>
+                            <p2>
+                                <br><strong>Data Visualization:</strong>
+                                1. Within QuickSight, I created an interactive sheet to visualize the imported dataset.
+                                <br>2. I generated a bar chart to display the most popular brands based on product
+                                frequencyin the dataset.
+                                <br>3. To highlight the most frequently occurring brands, I sorted the chart in
+                                descending order.
+                                <br>4. I explored additional visualizations, such as comparisons of product prices,
+                                top-selling product titles, and seller performance, utilizing various chart types
+                                offered by QuickSight.
+                            </p2>
+                            <img src="project screenshots\Product Analysis - 1.png" class=popup-img>
+                            <img src="project screenshots\Product Analysis - 2.png" class=popup-img>
+                            <img src="project screenshots\Product Analysis - 3.png" class=popup-img>
+                            <img src="project screenshots\Product Analysis - 4.png" class=popup-img>
+                            <p2>
+                                <br><strong>Conclusion:</strong>
+                                This project effectively leveraged Amazon QuickSight to visualize and analyze a large
+                                dataset. By systematically following each step, I was able to transform raw data stored
+                                in Amazon S3 into insightful visualizations. These visualizations provided a
+                                comprehensive overview of key metrics, such as brand popularity, product pricing,
+                                top-selling items, and seller performance. The process demonstrated the capabilities of
+                                Amazon QuickSight as a powerful tool for data-driven decision-making and highlighted its
+                                potential to derive meaningful insights from extensive datasets.
+                            </p2>
+                        </div>
+                        <div class=overlay onclick=toggleCard(this)></div>
+                        <p1>Created Data Visualizations using Amazon S3 and Amazon Quicksight, working with a large data
+                            set of best selling Amazon products</p1>
+                        <p>Created interactive data visualizations using Amazon QuickSight and data stored in Amazon S3.
+                            Processed and analyzed a large data set of best-selling Amazon products to extract valuable
+                            insights. Utilized QuickSight's advanced features to create dynamic dashboards and
+                            reports,enhancing data accessibility and decision-making.</p>
+                    </div>
+                    <div id=imageModal class=modal><span class=close>&times;</span><img class=modal-content
+                            id=modalImage>
+                        <div class=caption></div><a class=prev>&#10094;</a><a class=next>&#10095;</a>
+                    </div>
+                    <div class=project>
+                        <div class=date>Nov<br>2023</div>
+                        <div class=icon>
+                            <h4>S3 Web Hosting</h4><img src="icons\view more icon.svg" onclick=toggleCard(this)>
+                        </div>
+                        <div id=popup-card class=popup-card>
+                            <div class=close-btn onclick=toggleCard(this)>×</div>
+                            <h5>Built&hosted a static website on AWS using Amazon S3</h5>
+                            <p2><br><strong>Project Overview</strong>This project involves building and hosting a static
+                                website using Amazon S3(Simple Storage Service)on AWS(Amazon Web Services).The main
+                                goals were to leverage S3's scalable and reliable storage for hosting static web content
+                                (like HTML, CSS, and JavaScript files) and to implement best practices for performance,
+                                security, and cost-effectiveness.
+                            </p2>
+                            <div class=arc>
+                                <img src="Architectures images\S3 Web Hosting Architecture.svg">
+                            </div>
+                            <p2>
+                                <br><strong>Configuring Website Hosting</strong>
+                                I started by creating an S3 bucket using the AWS Management Console. This bucket would
+                                act as the storage location for all the files that make up my website.
+                            </p2>
+                            <p2>
+                                <br><strong>Setting Object Permissions</strong>
+                                With the hosting configured, I uploaded all the necessary files for my website,
+                                including HTML, CSS, JavaScript, and images, to the S3 bucket.
+                            </p2>
+                            <p2>
+                                <br><strong>Task Definition Creation</strong>
+                                To make my website publicly accessible, I adjusted the permissions of the uploaded files
+                                to ensure they were publicly readable. This allowed anyone with the website's URL to
+                                access and view the content.
+                            </p2><img src="project screenshots\S3 Web - 1.png" class=popup-img><img
+                                src="project screenshots\S3 Web - 2.png" class=popup-img><img
+                                src="project screenshots\S3 Web - 3.png" class=popup-img><img
+                                src="project screenshots\S3 Web - 4.png" class=popup-img><img
+                                src="project screenshots\S3 Web - 5.png" class=popup-img>
+                            <p2><br><strong>Conclusion</strong>By following these steps,I successfully hosted my static
+                                website on AWS S3.The process was both straightforward and efficient,providing me with a
+                                cost-effective and scalable solution for hosting my site.Leveraging S3 for website
+                                hosting not only simplified deployment but also ensured that my website could handle
+                                varying levels of traffic with ease.</p2>
+                        </div>
+                        <div class=overlay onclick=toggleCard(this)></div>
+                        <p1>Built&hosted a static website on AWS using Amazon S3</p1>
+                        <p>Built and hosted a static website using Amazon S3,leveraging its scalable storage solution to
+                            deliver content efficiently.Implemented best practices for website performance and
+                            security,including configuring bucket policies and enabling static website hosting
+                            features.Achieved a highly available and cost-effective hosting solution,demonstrating
+                            proficiency in cloud services and web technologies.</p>
+                    </div>
+                    <div id=imageModal class=modal><span class=close>&times;</span><img class=modal-content
+                            id=modalImage>
+                        <div class=caption></div><a class=prev>&#10094;</a><a class=next>&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=divider-container></div>
+    <div id=certifications class=heading-container>
+        <div class=heading-container>
+            <h3 id=certifications-main-heading>Certifications</h3>
+            <div class=carousel>
+                <div class=carousel-card>
+                    <div class=card-icon><img src=icons\amazon-web-services-2.svg width=80 height=80>
+                        <div class=cert-preview><img src="cert\Thumbnail - AWS Cloud Support Associate (Coursera).jpg"
+                                alt="Certificate Preview"></div>
+                    </div><a href="cert\AWS Cloud Support Associate (Coursera).pdf" class=title>AWS Cloud Support
+                        Associate</a>
+                    <div class=text>Amazon Web Services|2024</div>
+                </div>
+                <div class=carousel-card>
+                    <div class=card-icon><img src=icons\amazon-web-services-2.svg width=80 height=80>
+                        <div class=cert-preview><img src="cert\Thumbnail - Architecting Solutions on AWS (Coursera).jpg"
+                                alt="Certificate Preview"></div>
+                    </div><a href="cert\Architecting Solutions on AWS (Coursera).pdf" class=title>Architecting Solutions
+                        on AWS</a>
+                    <div class=text>Amazon Web Services|2024</div>
+                </div>
+                <div class=carousel-card>
+                    <div class=card-icon><img src="icons\google icon.svg" width=80 height=80>
+                        <div class=cert-preview><img src="cert\Thumbnail - Google AI Essentials (Coursera).jpg"
+                                alt="Certificate Preview"></div>
+                    </div><a href="cert\Google AI Essentials (Coursera).pdf" class=title>Google AI Essentials</a>
+                    <div class=text>Google|2024</div>
+                </div>
+                <div class=carousel-card>
+                    <div class=card-icon><img src=icons\amazon-web-services-2.svg width=80 height=80>
+                        <div class=cert-preview><img src="cert\Thumbnail - AWS Cloud Technical Essentials.jpg"
+                                alt="Certificate Preview"></div>
+                    </div><a href="cert\AWS Cloud Technical Essentials.pdf" class=title>AWS Cloud Technical
+                        Essentials</a>
+                    <div class=text>Amazon Web Services|2024</div>
+                </div>
+                <div class=carousel-card>
+                    <div class=card-icon><img src=icons\amazon-web-services-2.svg width=80 height=80>
+                        <div class=cert-preview><img src="cert\Thumbnail - Data Analytics with AWS (Coursera).jpg"
+                                alt="Certificate Preview"></div>
+                    </div><a href="cert\Data Analytics with AWS (Coursera).pdf" class=title>Getting Started with Data
+                        Analytics on AWS</a>
+                    <div class=text>Amazon Web Services|2022</div>
+                </div>
+                <div class=carousel-card>
+                    <div class=card-icon><img src=icons\university-of-michigan-3.svg width=80 height=80>
+                        <div class=cert-preview><img src="cert\Thumbnail - Programming For Everybody (Coursera).jpg"
+                                alt="Certificate Preview"></div>
+                    </div><a href="cert\Programming For Everybody (Coursera).pdf" class=title>Programming For
+                        Everybody<br>(Getting started with Python)</a>
+                    <div class=text>University of Michigan|2022</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=divider-container></div>
+    <div id=beyond-tech>
+        <div class=info-container>
+            <div class=info-box>
+                <h4><span>Beyond</span>&nbsp;the Tech</h4>
+                <p><br>When I'm not geeking out over <span>cloud computing</span> you'll catch me in a whole different
+                    world of fun:<br><br>-Hitting the ping pong table to relax.<br>-Capturing life's quirky moments
+                    through my camera lens.
+                    <br>- Perfecting my swirls and loops in calligraphy.<br>
+                    <br>I'm also into podcasts that dig into philosophy,psychology,history,political science,and
+                    economics.<br><br>I love learning about new stuff,but I'm also all about treating people with
+                    respect and lending a hand whenever I can. I'm excited to find a place where I can bring my blend of
+                    creativity and tech skills to make a real impact while keeping things fun and evolving along the
+                    way.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class=divider-container></div>
+    <div id=contact>
+        <div class=contact-container><a href=https://www.linkedin.com/in/themohammadsaim><img
+                    src="icons\linkedin icon.svg"><a href=https://github.com/themohammadsaim><img
+                        src="icons\github icon.svg"></a><a href=https://www.credly.com/users/themohammadsaim><img
+                        src="icons\credly icon.svg"></a><a href=https://medium.com/@themohammadsaim><img
+                        src="icons\medium icon.svg"></a><a href=mailto:themohammadsaim@gmail.com><img
+                        src="icons\gmail icon.svg"></a></div>
+    </div>
 </body>
 <footer>
-<div class=footer-container>
-<div class=footer-legal>
-<span>Made by Mohammad Saim | 2024 &copy; All rights reserved.</span>
-</div>
-</div>
+    <div class=footer-container>
+        <div class=footer-legal><span>Made by Mohammad Saim|2024&copy;All rights reserved.</span></div>
+    </div>
 </footer>
+
 </html>
